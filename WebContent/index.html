@@ -31,6 +31,9 @@
 
 $(document).ready(function(){
 	
+	var html ="";
+	html += "스토리보드"
+	
 	var app = document.getElementById('app');
 
 	var typewriter = new Typewriter(app, {
@@ -46,10 +49,22 @@ $(document).ready(function(){
 	    .typeString('This Is My Portfolio')
 	    .pauseFor(1000)
 	    .deleteAll()
-	   	.typeString('#Devloper #Project <br> #LEE BIN #Portfolio')
+	   	.typeString('#Devloper #Project #LEE BIN #Portfolio')
 	    .pauseFor(1000)
 	    .deleteAll()
 	    .start();
+	
+	
+	$("#pic1").click(function(){ //pic1을 눌렀을때
+		
+		var picsrc  = $("#pic1").attr("src");
+		
+		$(".modal-img").attr('src', 'img/PickMI/마이페이지.png');
+		$(".text-div").html("마이페이지");
+		$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		
+	})
 	
 	
 });
@@ -57,6 +72,7 @@ $(document).ready(function(){
 </script>
 
 <style type="text/css">
+/*모달창 사이즈 조절*/
 
 /* 스킬 아이콘 hover*/
 .dev-icons .list-inline-item i:hover {
@@ -101,7 +117,7 @@ a {
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Project_PickMi</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -149,12 +165,12 @@ a {
 
     <hr class="m-0">
 
-	    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+	 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
+        <ul class="list-inline dev-icons" style="font-weight:600;">
           <li class="list-inline-item">
             <i>Java</i>
           </li>
@@ -261,56 +277,167 @@ a {
 	
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
       <div class="w-100">
-        <h2 class="mb-5">Projects</h2>
+        <h2 class="mb-5">Project SUMMARY</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Senior Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+            <h3 class="mb-0">픽미(PickMi)</h3>
+            <div class="subheading mb-3">주제: 프로젝트 & 팀원 관리 플랫폼</div>
+            <br><br>
+            <h4 class="mb-0">@개발환경</h4> <br>
+            <p>
+	            -운영체제 : window10 <br>
+				-서버 : Apache Tomcat 9.0<br>
+				-DBMS : Oracle 11g Express Edition Release 11.2.0<br>
+				-프레임워크 : Bootstrap<br>
+				-라이브러리 : jQuery, AJAX, commons<br>
+				-개발언어 : JAVA(JDK1.8), HTML5/CSS, JavaScript, JSP/Servlet, SQL<br>
+				-개발도구 : Eclipse, STAR UML, draw.io, ERD Cloud, Git, DBbrowser<br>
+            </p>
+            <br>
+            <h4 class="mb-0">@구현기능</h4> <br>
+            
+     <div class="container" style="padding-bottom:20px; color:#868e96;">
+		<table class="table table-striped" style="color:#868e96;">
+			 <thead>
+			   <tr>
+			      <th>구분</th>
+			      <th style ="padding-left: 35px;">항목</th>
+			   </tr>
+			 </thead>
+			 <tbody>
+			   <tr>
+			      <td style ="vertical-align: middle;">회원 서비스</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>로그인 / 로그아웃</li>
+			      		<li>회원가입</li>
+			      		<li>PW 찾기 (메일인증)</li>
+			      		<li>아이디 저장</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>
+			      <td style ="vertical-align: middle;">게시판(프로필, 프로젝트, 자유, 완성된 프로젝트 공유 게시판)</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>게시글 작성, 수정, 삭제, 보기, 좋아요</li>
+			      		<li>댓글 작성, 수정, 삭제, 보기, 좋아요</li>
+			      		<li>파일 업로드 / 다운로드</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			  <tr>
+			      <td style ="vertical-align: middle;">채팅</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>회원 간 실시간 채팅</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>				   
+			      <td style ="vertical-align: middle;">마이페이지</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>내 정보 수정</li>
+			      		<li>비밀번호 / 닉네임 / 프로필 사진 변경</li>
+			      		<li>내가 쓴 글 / 댓글 / 좋아요 글 보기</li>
+			      		<li>회원탈퇴</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>
+			      <td style ="vertical-align: middle;">관리자 페이지</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>게시판 보기 / 수정 / 삭제 / 검색</li>
+			      		<li>회원 정보 보기</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			 </tbody> 
+		</table>				
+    </div><!-- CONTAINER -->
+    
+            <br>
+			<h4 class="mb-0">@참여소감</h4> <br>
+            <p>
+            	프로젝트를 시작할 당시엔 서블릿에 대한 개념이 완벽히 자리 잡히지 않아 내가 맡게 될 부분을 <br> 
+            	구현할 수 있을까라는 걱정이 많았지만 모르는 부분은 나이가 어린 친구들한테 물어봐가며 끝까지 포기하지 않고 <br>제가 맡은 부분은 구현해낸 제 자신이 뿌듯했습니다.<br>
+            	프로젝트를 구현 하면서는 몰랐지만 끝나고 난 뒤, MVC패턴의 대략적인 흐름을 이해 할 수 있게 되었고 <br>
+            	사용해보고 싶었던 기술인 AJAX를 이용해 파일업로드를 구현해 내어 <br>많은 자신감을 얻을 수 있었던 프로젝트였습니다.
+            </p>
+            <br>
+            <h4 class="mb-0">@프로젝트 세부 정보</h4> <br>
+            <a href="https://drive.google.com/file/d/1AiR4qfFOIUCdt3ytN8NNDmm_ZNUkluju/view?usp=sharing">- PickMi PPT</a> 
+            <br>
+            <a href="https://github.com/Kinuk97/PickMI">- PickMi GitHub</a>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">March 2013 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Developer</h3>
-            <div class="subheading mb-3">Intelitec Solutions</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2011 - March 2013</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
-          </div>
-        </div>
-
-      </div>
-
+         </div> 
+        </div>          
     </section>
-
+    
+    <hr class="m-0">
+    
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+    	<div class="w-100">
+        	<h2 class="mb-5">Project ERD</h2>
+		<div>
+       		<img src="img/PickMI/ERD.png" alt="">
+        </div>
+      	</div>
+    
+  	</section>
+  	
+  	<hr class="m-0">
+  	
+	<section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+	
+	 <div class="w-100">
+        	<h2 class="mb-5">Story Board</h2>
+	    <div class="container-fluid p-0">
+	      <div class="row no-gutters">
+	        <div class="col-lg-4 col-sm-6">
+	            <img id= "pic1" style = "height: 342px;" class="img-fluid" src="img/PickMI/마이페이지.png" alt="">
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	          <a class="portfolio-box" href="img/PickMI/내가 찜한 게시물.png">
+	            <img style = "height: 342px;" class="img-fluid" src="img/PickMI/내가 찜한 게시물.png" alt="">
+	          </a>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	          <a class="portfolio-box" href="img/PickMI/비밀번호 수정.png">
+	            <img style = "height: 342px;" class="img-fluid" src="img/PickMI/비밀번호 수정.png" alt="">
+	          </a>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	          <a class="portfolio-box" href="img/PickMI/관리자 페이지 게시판 게시글 삭제.png">
+	            <img style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자 페이지 게시판 게시글 삭제.png" alt="">
+	          </a>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	          <a class="portfolio-box" href="img/PickMI/관리자페이지 게시글 댓글 삭제.png">
+	            <img style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자페이지 게시글 댓글 삭제.png" alt="">
+	          </a>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	          <a class="portfolio-box" href="img/PickMI/관리자페이지 계정 삭제.png">
+	            <img style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자페이지 계정 삭제.png" alt="">
+	          </a>
+	        </div>
+	               
+	      </div>
+	    </div>
+     </div>
+	
+	</section>
+	
+	
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
@@ -390,6 +517,33 @@ a {
     </section>
 
   </div>
+
+
+<!-- 스토리보드 모달창 -->
+<div class="modal fade" id="storyModal">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">STORY BOARD DETAIL</h4>
+        <button id="inputPwX" type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <img class='modal-img'>
+    	<div class='text-div'></div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="submit" id="storyModalkBtn"class="btn btn-dark" data-dismiss="modal">확인</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
