@@ -52,8 +52,10 @@ $(document).ready(function(){
 	    .start();
 	
 		
-	$("#pic1, #pic2, #pic3, #pic4, #pic5, #pic6").click(function(){
-				
+	$(".overlay").click(function(){
+// 		var a = $(this).attr("id");
+// 		console.log(a);
+		
 		if($(this).attr("id") == 'pic1'){
 			
 			$(".modal-img").attr('src', 'img/PickMI/마이페이지.png');
@@ -90,13 +92,38 @@ $(document).ready(function(){
 			$(".text-div").html("<h4>관리자페이지 계정 삭제<h4>");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		
-		}
-		
-		
-		
+		} else if ($(this).attr("id") == 'pic7'){
 			
+			$(".modal-img").attr('src', 'img/culturesquare/SSL 인증서.png');
+			$(".text-div").html("<h4>SSL 인증서 추가<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+					
+		} else if ($(this).attr("id") == 'pic8'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/회원가입.png');
+			$(".text-div").html("<h4>회원가입 페이지<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		} else if ($(this).attr("id") == 'pic9'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/메일인증.png');
+			$(".text-div").html("<h4>메일인증<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		} else if ($(this).attr("id") == 'pic10'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/비밀번호 암호화.png');
+			$(".text-div").html("<h4>회원가입 DB 저장시 암호화<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		} else if ($(this).attr("id") == 'pic11'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/로그인.png');
+			$(".text-div").html("<h4>로그인 폼<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		} 
+		
 	})
-	
+
+
 	
 });
 
@@ -516,15 +543,15 @@ a {
 	
 	 <div class="w-100">
         	<h2 class="mb-5">Story Board</h2>
-        	<div class="subheading mb-3">사진 클릭시 더 자세히 볼 수 있습니다</div>
-	    <div class="container-fluid p-0" id="pic">
+            <div class="subheading mb-3">Click, Detail View</div>
+	    <div class="container-fluid p-0" id="pic" style=" width:140%;">
 	      <div class="row no-gutters">
 	        <div class="col-lg-4 col-sm-6">
 		        <figure>
-		            <img id= "pic1" name="pic1" style = "height: 342px;" class="img-fluid" src="img/PickMI/마이페이지.png" alt="">
-		            <div class="overlay" id="pic1">
-		            	<div class="description" id="pic1">
-		            		#마이페이지 <br> #회원정보불러오기
+		            <img id= "pic7" name="pic7" style = "height: 342px;" class="img-fluid" src="img/culturesquare/SSL 인증서.png" alt="">
+		            <div class="overlay" id="pic7">
+		            	<div class="description" id="pic7">
+		            		#SSL 인증서
 		            	</div>
 		            </div>
 		        </figure>
@@ -532,10 +559,10 @@ a {
 	        
 	        <div class="col-lg-4 col-sm-6">
 	        	<figure>
-		            <img id="pic2" style = "height: 342px;" class="img-fluid" src="img/PickMI/내가 찜한 게시물.png" alt="">
-		           	<div class="overlay" id="pic2">
-		            	<div class="description" id="pic2">
-		            		#마이페이지 <br> #찜한 게시물
+		            <img id="pic8" name="pic8" style = "height: 342px;" class="img-fluid" src="img/culturesquare/회원가입.png" alt="">
+		           	<div class="overlay" id="pic8">
+		            	<div class="description" id="pic8">
+		            		#회원가입폼 <br> #중복 검사 <br> #AJAX <br> #유효성 검사 <br>
 		            	</div>
 		            </div>
 	        	</figure>
@@ -543,10 +570,10 @@ a {
 	        
 	        <div class="col-lg-4 col-sm-6">
 	        	<figure>
-		            <img id="pic3" style = "height: 342px;" class="img-fluid" src="img/PickMI/비밀번호 수정.png" alt="">
-		            <div class="overlay" id="pic3">
-		            	<div class="description" id="pic3">
-		            		#마이페이지 <br> #비밀번호 수정
+		            <img id="pic9" style = "height: 342px;" class="img-fluid" src="img/culturesquare/메일인증.png" alt="">
+		            <div class="overlay" id="pic9">
+		            	<div class="description" id="pic9">
+		            		#메일인증
 		            	</div>
 		            </div>
 	        	</figure>
@@ -554,10 +581,10 @@ a {
 	        
 	        <div class="col-lg-4 col-sm-6">
 	        	<figure>
-		            <img id="pic4" style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자 페이지 게시판 게시글 삭제.png" alt="">
-		            <div class="overlay" id="pic4">
-		            	<div class="description" id="pic4">
-		            		#마이페이지 <br> #비밀번호 수정
+		            <img id="pic10" style = "height: 342px;" class="img-fluid" src="img/culturesquare/비밀번호 암호화.png" alt="">
+		            <div class="overlay" id="pic10">
+		            	<div class="description" id="pic10">
+		            		#비밀번호 암호화 <br> #DB저장 암호화
 		            	</div>
 		            </div>		            
 	        	</figure>
@@ -565,10 +592,10 @@ a {
 	        
 	        <div class="col-lg-4 col-sm-6">
 	        	<figure>
-		            <img id="pic5" style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자페이지 게시글 댓글 삭제.png" alt="">
-		            <div class="overlay" id="pic5">
-		            	<div class="description" id="pic5">
-		            		#관리자페이지 <br> #댓글 삭제
+		            <img id="pic11" style = "height: 342px;" class="img-fluid" src="img/culturesquare/로그인.png" alt="">
+		            <div class="overlay" id="pic11">
+		            	<div class="description" id="pic11">
+		            		#로그인폼 <br> #AJAX <br> #쿠키 <br> #아이디 저장 <br> 세션
 		            	</div>
 		            </div>
 	        	</figure>
@@ -588,35 +615,7 @@ a {
 	               
 	      </div>
 	    </div>
-     </div>
-	
-	 
-	 <!-- 스토리보드 모달창 -->
-	<div class="modal fade" id="storyModal">
-	  <div class="modal-dialog modal-dialog-centered modal-xl">
-	    <div class="modal-content">
-	
-	      <!-- Modal Header -->
-	      <div class="modal-header">
-	        <h4 class="modal-title">STORY BOARD DETAIL</h4>
-	        <button id="inputPwX" type="button" class="close" data-dismiss="modal">&times;</button>
-	      </div>
-	
-	      <!-- Modal body -->
-	      <div class="modal-body">
-	        <img class='modal-img' style='width:100%;'>
-	        <br>
-	    	<div class='text-div' style="text-align:center;"></div>
-	      </div>
-		  <!-- Modal footer -->
-	      <div class="modal-footer">
-	        <div></div>
-	      </div>
-		
-	    </div>
-	  </div>
-	</div>
-	
+     </div>	
 	</section>
 
     <hr class="m-0">	
@@ -748,8 +747,8 @@ a {
 	
 	 <div class="w-100">
         	<h2 class="mb-5">Story Board</h2>
-        	<div class="subheading mb-3">사진 클릭시 더 자세히 볼 수 있습니다</div>
-	    <div class="container-fluid p-0" id="pic">
+        	<div class="subheading mb-3">Click, Detail View</div>
+	    <div class="container-fluid p-0" id="pic" style="width:140%;">
 	      <div class="row no-gutters">
 	        <div class="col-lg-4 col-sm-6">
 		        <figure>
@@ -820,41 +819,13 @@ a {
 	               
 	      </div>
 	    </div>
-     </div>
-	
-	 
-	 <!-- 스토리보드 모달창 -->
-	<div class="modal fade" id="storyModal">
-	  <div class="modal-dialog modal-dialog-centered modal-xl">
-	    <div class="modal-content">
-	
-	      <!-- Modal Header -->
-	      <div class="modal-header">
-	        <h4 class="modal-title">STORY BOARD DETAIL</h4>
-	        <button id="inputPwX" type="button" class="close" data-dismiss="modal">&times;</button>
-	      </div>
-	
-	      <!-- Modal body -->
-	      <div class="modal-body">
-	        <img class='modal-img' style='width:100%;'>
-	        <br>
-	    	<div class='text-div' style="text-align:center;"></div>
-	      </div>
-		  <!-- Modal footer -->
-	      <div class="modal-footer">
-	        <div></div>
-	      </div>
-		
-	    </div>
-	  </div>
-	</div>
-	
+     </div>	
 	</section>
 	
 	
     <hr class="m-0">
 
-
+	
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
@@ -901,7 +872,33 @@ a {
     </section>
 
   </div>
-
+  
+  	<!-- 스토리보드 모달창 -->
+	<div class="modal fade" id="storyModal">
+	  <div class="modal-dialog modal-dialog-centered modal-xl">
+	    <div class="modal-content">
+	
+	      <!-- Modal Header -->
+	      <div class="modal-header">
+	        <h4 class="modal-title">Detail View</h4>
+	        <button id="inputPwX" type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	
+	      <!-- Modal body -->
+	      <div class="modal-body">
+	    	<div class='text-div'></div>
+	        <br>
+	        <img class='modal-img' style='width:100%;'>
+	      </div>
+		  <!-- Modal footer -->
+	      <div class="modal-footer">
+	        <div></div>
+	      </div>
+		
+	    </div>
+	  </div>
+	</div>
+	
 
 
 
