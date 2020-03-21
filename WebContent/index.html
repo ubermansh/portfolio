@@ -29,6 +29,7 @@
 
 <script type="text/javascript">
 
+
 $(document).ready(function(){
 	
 	var app = document.getElementById('app');
@@ -55,6 +56,7 @@ $(document).ready(function(){
 	$(".overlay").click(function(){
 // 		var a = $(this).attr("id");
 // 		console.log(a);
+		
 		
 		if($(this).attr("id") == 'pic1'){
 			
@@ -119,6 +121,11 @@ $(document).ready(function(){
 			$(".modal-img").attr('src', 'img/culturesquare/로그인.png');
 			$(".text-div").html("<h4>로그인 폼<h4>");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		} else if ($(this).attr("id") == 'pic12'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/아이디 비밀번호 찾기.png');
+			$(".text-div").html("<h4>아이디/비밀번호 찾기<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		} 
 		
 	})
@@ -130,6 +137,36 @@ $(document).ready(function(){
 </script>
 
 <style type="text/css">
+
+/*모달창 강제 패딩 없애기*/
+body{
+    padding-right: 0px !important;
+	
+}
+
+.modal fade show{
+    padding-right: 0px !important;
+	
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modal fade {
+    padding-right: 0px !important;
+    overflow:hidden;
+}
+
+
+#sideNav{
+    padding-right: 0px !important;
+
+}
+
+
+
 
 /*오버레이*/
 figure {
@@ -603,10 +640,10 @@ a {
 	        
 	        <div class="col-lg-4 col-sm-6">
 	        	<figure>
-		            <img id="pic6" style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자페이지 계정 삭제.png" alt="">
-		            <div class="overlay" id="pic6">
-		            	<div class="description" id="pic6">
-		            		#관리자페이지 <br> #계정 삭제
+		            <img id="pic12" style = "height: 342px;" class="img-fluid" src="img/culturesquare/아이디 비밀번호 찾기.png" alt="">
+		            <div class="overlay" id="pic12">
+		            	<div class="description" id="pic12">
+		            		#아이디 찾기 <br> #비밀번호 찾기 <br> #AJAX <br> #임시비밀번호 메일발송
 		            	</div>
 		            </div>
 	
@@ -874,7 +911,7 @@ a {
   </div>
   
   	<!-- 스토리보드 모달창 -->
-	<div class="modal fade" id="storyModal">
+	<div class="modal fade" id="storyModal"	>
 	  <div class="modal-dialog modal-dialog-centered modal-xl">
 	    <div class="modal-content">
 	
