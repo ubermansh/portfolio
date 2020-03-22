@@ -56,77 +56,118 @@ $(document).ready(function(){
 	$(".overlay").click(function(){
 // 		var a = $(this).attr("id");
 // 		console.log(a);
+		$('html').css({'overflow': 'hidden'});
 		
 		
 		if($(this).attr("id") == 'pic1'){
 			
 			$(".modal-img").attr('src', 'img/PickMI/마이페이지.png');
-			$(".text-div").html("<h4>마이페이지 회원정보 불러오기<h4>");
+			$(".text-div").html("<h4>- 마이페이지 회원정보 불러오기<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 			
 		} else if ($(this).attr("id") == 'pic2'){
 			
 			$(".modal-img").attr('src', 'img/PickMI/내가 찜한 게시물.png');
-			$(".text-div").html("<h4>마이페이지 내가 작성한 게시글 & 댓글 & 찜한 게시글<h4>");
+			$(".text-div").html("<h4>- 마이페이지 내가 작성한 게시글 & 댓글 & 찜한 게시글<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 
 		} else if ($(this).attr("id") == 'pic3'){
 			
 			$(".modal-img").attr('src', 'img/PickMI/비밀번호 수정.png');
-			$(".text-div").html("<h4>마이페이지 비밀번호 수정<h4>");
+			$(".text-div").html("<h4>- 마이페이지 비밀번호 수정<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		
 		} else if ($(this).attr("id") == 'pic4'){
 			
 			$(".modal-img").attr('src', 'img/PickMI/관리자 페이지 게시판 게시글 삭제.png');
-			$(".text-div").html("<h4>관리자페이지 각 게시판 게시글 삭제(체크리스트 삭제)<h4>");
+			$(".text-div").html("<h4>- 관리자페이지 각 게시판 게시글 삭제(체크리스트 삭제)<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		
 		} else if ($(this).attr("id") == 'pic5'){
 			
 			$(".modal-img").attr('src', 'img/PickMI/관리자페이지 게시글 댓글 삭제.png');
-			$(".text-div").html("<h4>관리자페이지 게시글 댓글 삭제<h4>");
+			$(".text-div").html("<h4>- 관리자페이지 게시글 댓글 삭제<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		
 		} else if ($(this).attr("id") == 'pic6'){
 			
 			$(".modal-img").attr('src', 'img/PickMI/관리자페이지 계정 삭제.png');
-			$(".text-div").html("<h4>관리자페이지 계정 삭제<h4>");
+			$(".text-div").html("<h4>- 관리자페이지 계정 삭제<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		
 		} else if ($(this).attr("id") == 'pic7'){
 			
 			$(".modal-img").attr('src', 'img/culturesquare/SSL 인증서.png');
-			$(".text-div").html("<h4>SSL 인증서 추가<h4>");
+			$(".text-div").html("<h4>- SSL 인증서 추가<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 					
 		} else if ($(this).attr("id") == 'pic8'){
 			
 			$(".modal-img").attr('src', 'img/culturesquare/회원가입.png');
-			$(".text-div").html("<h4>회원가입 페이지<h4>");
+			$(".text-div").html("<h4>- 회원가입폼 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/회원가입 코드.png');
+			$(".text-div-code").html("<h4>- 아이디/닉네임 중복검사 구현코드<h4>");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		
 		} else if ($(this).attr("id") == 'pic9'){
 			
 			$(".modal-img").attr('src', 'img/culturesquare/메일인증.png');
-			$(".text-div").html("<h4>메일인증<h4>");
+			$(".text-div").html("<h4>- 메일인증 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/메일인증 코드.png');
+			$(".text-div-code").html("<h4>- 메일인증 구현코드<h4>");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		} else if ($(this).attr("id") == 'pic10'){
 			
 			$(".modal-img").attr('src', 'img/culturesquare/비밀번호 암호화.png');
-			$(".text-div").html("<h4>회원가입 DB 저장시 암호화<h4>");
+			$(".text-div").html("<h4>- 비밀번호 암호화 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/비밀번호 암호화 코드.png');
+			$(".text-div-code").html("<h4>- 비밀번호 암호화 구현코드<h4>");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
 		} else if ($(this).attr("id") == 'pic11'){
 			
 			$(".modal-img").attr('src', 'img/culturesquare/로그인.png');
-			$(".text-div").html("<h4>로그인 폼<h4>");
+			$(".text-div").html("<h4>- 로그인폼 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/로그인 코드.png');
+			$(".text-div-code").html("<h4>- 로그인폼 구현코드<h4>");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+			
 		} else if ($(this).attr("id") == 'pic12'){
 			
 			$(".modal-img").attr('src', 'img/culturesquare/아이디 비밀번호 찾기.png');
-			$(".text-div").html("<h4>아이디/비밀번호 찾기<h4>");
+			$(".text-div").html("<h5>- 아이디/비밀번호 찾기 상세보기<h5>");
+			$(".modal-code").attr('src', 'img/culturesquare/아이디 비밀번호찾기 코드.png');
+			$(".text-div-code").html("<h5>- 아이디/비밀번호 찾기 구현코드<h5>");
 			$("#storyModal").modal({backdrop: 'static', keyboard: false});
-		} 
+		
+		} else if ($(this).attr("id") == 'pic13'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/공연 위치 정보 추가.png');
+			$(".text-div").html("<h5>- 공연 위치 정보 추가 상세보기<h5>");
+			$(".modal-code").attr('src', 'img/culturesquare/공연 위치 정보 추가 코드.png');
+			$(".text-div-code").html("<h5>- 공연 위치 정보 추가 구현코드<h5>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		}
+		
+		$('#inputClose').click(function(){
+			$('html').css({'overflow': 'auto'});
+			
+		})
+		
 		
 	})
 
@@ -151,7 +192,7 @@ body{
 
 .modal-open .modal {
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 .modal fade {
@@ -260,12 +301,6 @@ a {
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#pickmi">Project_PickMi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
         </li>
       </ul>
     </div>
@@ -431,19 +466,13 @@ a {
             <h4 class="mb-0">@개발환경</h4> <br>
             <p>
 	            -운영체제 : Windows10 <br>
+				-개발도구 : Eclipse<br>
 				-서버 : Apache Tomcat 9.0<br>
 				-DBMS : Oracle 11g Express Edition Release 11.2.0<br>
-				-프레임워크 : Bootstrap<br>
-				-라이브러리 : jQuery, AJAX, commons<br>
-				-개발언어 : JAVA(JDK1.8), HTML5/CSS, JavaScript, JSP/Servlet, SQL<br>
-				-개발도구 : Eclipse, STAR UML, draw.io, ERD Cloud, Git, DBbrowser<br>
-	            -운영체제 : window10 <br>
-				-서버 : Apache Tomcat 9.0<br>
-				-DBMS : Oracle 11g Express Edition Release 11.2.0<br>
-				-프레임워크 : Bootstrap<br>
-				-라이브러리 : jQuery, AJAX, commons<br>
-				-개발언어 : JAVA(JDK1.8), HTML5/CSS, JavaScript, JSP/Servlet, SQL<br>
-				-개발도구 : Eclipse, STAR UML, draw.io, ERD Cloud, Git, DBbrowser<br>
+				-프레임워크 : Spring Framework, MyBatis Framework<br>
+				-스프링 버전 : Spring Tools3(Standalone Edition)3.9.10 RELEASE
+				-개발언어 : JAVA, HTML5, CSS, JavaScript, jQuery<br>
+				-디자인 툴 : Bootstrap
             </p>
             <br>
             <h4 class="mb-0">@구현기능</h4> <br>
@@ -547,10 +576,10 @@ a {
             <br>
 			<h4 class="mb-0">@참여소감</h4> <br>
             <p>
-            	프로젝트를 시작할 당시엔 서블릿에 대한 개념이 완벽히 자리 잡히지 않아 내가 맡게 될 부분을 <br> 
-            	구현할 수 있을까라는 걱정이 많았지만 모르는 부분은 나이가 어린 친구들한테 물어봐가며 끝까지 포기하지 않고 <br>제가 맡은 부분은 구현해낸 제 자신이 뿌듯했습니다.<br>
-            	프로젝트를 구현 하면서는 몰랐지만 끝나고 난 뒤, MVC패턴의 대략적인 흐름을 이해 할 수 있게 되었고 <br>
-            	사용해보고 싶었던 기술인 AJAX를 이용해 파일업로드를 구현해 내어 <br>많은 자신감을 얻을 수 있었던 프로젝트였습니다.
+				좋은 팀원들을 만나 서로 구현했던 부분들을 확인해주면서 보완해야 될 점들을 계속해서 회의하며 프로젝트를 진행했습니다.<br>
+				세미 프로젝트때와는 다른 새로운 파트를 맡았고, 스프링 프레임워크를 사용한 첫 프로젝트여서<br>
+				부족했지만 HTTPS, 로그인, 쿠키 저장 및 이메일 인증, 카카오맵 API등 재미있게 알아 갈 수 있는 시간들이었고<br> 
+				제가 맡았던 파트 및 전체적인 프로젝트 결과물 모두 만족스러웠던 프로젝트였습니다.<br>
             </p>
             <br>
             <h4 class="mb-0">@프로젝트 세부 정보</h4> <br>
@@ -632,7 +661,7 @@ a {
 		            <img id="pic11" style = "height: 342px;" class="img-fluid" src="img/culturesquare/로그인.png" alt="">
 		            <div class="overlay" id="pic11">
 		            	<div class="description" id="pic11">
-		            		#로그인폼 <br> #AJAX <br> #쿠키 <br> #아이디 저장 <br> 세션
+		            		#로그인폼 <br> #AJAX <br> #쿠키 <br> #아이디 저장 <br> #세션
 		            	</div>
 		            </div>
 	        	</figure>
@@ -647,6 +676,18 @@ a {
 		            	</div>
 		            </div>
 	
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic13" style = "height: 342px;" class="img-fluid" src="img/culturesquare/공연 위치 정보 추가.png" alt="">
+		            <div class="overlay" id="pic13">
+		            	<div class="description" id="pic13">
+		            		#위치정보 <br> #KAKAO MAPS
+		            	</div>
+		            </div>
+
 	        	</figure>
 	        </div>
 	               
@@ -674,13 +715,13 @@ a {
 		 </div>                  
             <h4 class="mb-0">@개발환경</h4> <br>
             <p>
-	            -운영체제 : window10 <br>
+	            -운영체제 : Windows10 <br>
+	            -개발도구 : Eclipse
+	            -DBMS : Oracle 11g Express Edition Release 11.2.0, SQL Developer
 				-서버 : Apache Tomcat 9.0<br>
-				-DBMS : Oracle 11g Express Edition Release 11.2.0<br>
-				-프레임워크 : Bootstrap<br>
-				-라이브러리 : jQuery, AJAX, commons<br>
-				-개발언어 : JAVA(JDK1.8), HTML5/CSS, JavaScript, JSP/Servlet, SQL<br>
-				-개발도구 : Eclipse, STAR UML, draw.io, ERD Cloud, Git, DBbrowser<br>
+				-개발언어 : Java, HTML5, CSS, Javascript, jQuery
+				-디자인 툴 : Bootstrap<br>
+				-형상/버전관리 : Github, Eclipse-git
             </p>
             <br>
             <h4 class="mb-0">@구현기능</h4> <br>
@@ -859,56 +900,9 @@ a {
      </div>	
 	</section>
 	
-	
-    <hr class="m-0">
-
-	
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
-      </div>
-      
-    </section>
-
   </div>
+  <!--   container-fluid p-0 -END-	 -->
+
   
   	<!-- 스토리보드 모달창 -->
 	<div class="modal fade" id="storyModal"	>
@@ -918,7 +912,7 @@ a {
 	      <!-- Modal Header -->
 	      <div class="modal-header">
 	        <h4 class="modal-title">Detail View</h4>
-	        <button id="inputPwX" type="button" class="close" data-dismiss="modal">&times;</button>
+	        <button id="inputClose" type="button" class="close" data-dismiss="modal">&times;</button>
 	      </div>
 	
 	      <!-- Modal body -->
@@ -926,10 +920,13 @@ a {
 	    	<div class='text-div'></div>
 	        <br>
 	        <img class='modal-img' style='width:100%;'>
+	        <hr>
+	        
 	      </div>
-		  <!-- Modal footer -->
-	      <div class="modal-footer">
-	        <div></div>
+	      <div style="padding:1rem;">
+	    	<div class='text-div-code'></div>
+	    	<br>
+	        <img class='modal-code' style="padding:1rem;">
 	      </div>
 		
 	    </div>
