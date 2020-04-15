@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>LeeBin's Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+
+
+</head>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+	
+	var app = document.getElementById('app');
+
+	var typewriter = new Typewriter(app, {
+	    loop: true
+	});
+
+	typewriter.typeString('Hello, World!')
+	    .pauseFor(1000)
+	    .deleteAll()
+	    .typeString('My Name Is BIN LEE')
+	    .pauseFor(1000)
+	    .deleteAll()
+	    .typeString('This Is My Portfolio')
+	    .pauseFor(1000)
+	    .deleteAll()
+	   	.typeString('#Devloper #Project #LEE BIN #Portfolio')
+	    .pauseFor(1000)
+	    .deleteAll()
+	    .start();
+	
+		
+	$(".overlay").click(function(){
+// 		var a = $(this).attr("id");
+// 		console.log(a);
+		$('html').css({'overflow': 'hidden'});
+		
+		
+		if($(this).attr("id") == 'pic1'){
+			
+			$(".modal-img").attr('src', 'img/PickMI/마이페이지.png');
+			$(".text-div").html("<h4>- 마이페이지 회원정보 불러오기<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+			
+		} else if ($(this).attr("id") == 'pic2'){
+			
+			$(".modal-img").attr('src', 'img/PickMI/내가 찜한 게시물.png');
+			$(".text-div").html("<h4>- 마이페이지 내가 작성한 게시글 & 댓글 & 찜한 게시글<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+
+		} else if ($(this).attr("id") == 'pic3'){
+			
+			$(".modal-img").attr('src', 'img/PickMI/비밀번호 수정.png');
+			$(".text-div").html("<h4>- 마이페이지 비밀번호 수정<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		} else if ($(this).attr("id") == 'pic4'){
+			
+			$(".modal-img").attr('src', 'img/PickMI/관리자 페이지 게시판 게시글 삭제.png');
+			$(".text-div").html("<h4>- 관리자페이지 각 게시판 게시글 삭제(체크리스트 삭제)<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		} else if ($(this).attr("id") == 'pic5'){
+			
+			$(".modal-img").attr('src', 'img/PickMI/관리자페이지 게시글 댓글 삭제.png');
+			$(".text-div").html("<h4>- 관리자페이지 게시글 댓글 삭제<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		} else if ($(this).attr("id") == 'pic6'){
+			
+			$(".modal-img").attr('src', 'img/PickMI/관리자페이지 계정 삭제.png');
+			$(".text-div").html("<h4>- 관리자페이지 계정 삭제<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		} else if ($(this).attr("id") == 'pic7'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/SSL 인증서.png');
+			$(".text-div").html("<h4>- SSL 인증서 추가<h4>");
+			$(".modal-code").attr('src', '');
+			$(".text-div-code").html("");
+
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+					
+		} else if ($(this).attr("id") == 'pic8'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/회원가입.png');
+			$(".text-div").html("<h4>- 회원가입폼 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/회원가입 코드.png');
+			$(".text-div-code").html("<h4>- 회원가입 코드<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		} else if ($(this).attr("id") == 'pic9'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/메일인증.png');
+			$(".text-div").html("<h4>- 메일인증 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/메일인증 코드.png');
+			$(".text-div-code").html("<h4>- 메일인증 구현코드<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		} else if ($(this).attr("id") == 'pic10'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/비밀번호 암호화.png');
+			$(".text-div").html("<h4>- 비밀번호 암호화 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/비밀번호 암호화 코드.png');
+			$(".text-div-code").html("<h4>- 비밀번호 암호화 구현코드<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		} else if ($(this).attr("id") == 'pic11'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/로그인.png');
+			$(".text-div").html("<h4>- 로그인폼 상세보기<h4>");
+			$(".modal-code").attr('src', 'img/culturesquare/로그인 코드.png');
+			$(".text-div-code").html("<h4>- 로그인폼 구현코드<h4>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+			
+		} else if ($(this).attr("id") == 'pic12'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/아이디 비밀번호 찾기.png');
+			$(".text-div").html("<h5>- 아이디/비밀번호 찾기 상세보기<h5>");
+			$(".modal-code").attr('src', 'img/culturesquare/아이디 비밀번호찾기 코드.png');
+			$(".text-div-code").html("<h5>- 아이디/비밀번호 찾기 구현코드<h5>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		
+		} else if ($(this).attr("id") == 'pic13'){
+			
+			$(".modal-img").attr('src', 'img/culturesquare/공연 위치 정보 추가.png');
+			$(".text-div").html("<h5>- 공연 위치 정보 추가 상세보기<h5>");
+			$(".modal-code").attr('src', 'img/culturesquare/공연 위치 정보 추가 코드.png');
+			$(".text-div-code").html("<h5>- 공연 위치 정보 추가 구현코드<h5>");
+			$("#storyModal").modal({backdrop: 'static', keyboard: false});
+		}
+		
+		$('#inputClose').click(function(){
+			$('html').css({'overflow': 'auto'});
+			
+		})
+		
+		
+	})
+
+
+	
+});
+
+</script>
+
+<style type="text/css">
+
+/*모달창 강제 패딩 없애기*/
+body{
+    padding-right: 0px !important;
+	
+}
+
+.modal fade show{
+    padding-right: 0px !important;
+	
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal fade {
+    padding-right: 0px !important;
+    overflow:hidden;
+}
+
+
+#sideNav{
+    padding-right: 0px !important;
+
+}
+
+
+
+
+/*오버레이*/
+figure {
+   width: 100%;
+   position: relative;
+}
+    
+figure img {
+   display: block;
+   width: 100%;
+   height: auto;
+}   
+
+figure .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transition: .6s ease;
+    transition: .6s ease;
+}
+
+figure .overlay .description {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+figure:hover .overlay {
+    display: block;
+    height: 100%;
+}
+
+
+
+
+/* 스킬 아이콘 hover*/
+.dev-icons .list-inline-item i:hover {
+  color: #607D8B;
+}
+/* 메일 hover */
+a:hover, a:focus, a:active {
+  color: #607D8B;
+}
+
+.bg-primary {
+    background-color: #607D8B!important;
+}
+
+.text-primary {
+    color: #607D8B!important;
+}
+
+a {
+    color: #90A4AE;
+}
+</style>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Lee Bin</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profilepic1.png" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#culturesquare">Project_CultureSquare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#pickmi">Project_PickMi</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+  
+	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="img-fluid img-profile rounded-circle mx-auto mb-2">      
+      <div class="w-100">
+		
+		<div id="app" style="font-size: 5.5rem;font-weight: 600;margin-bottom: 10%;"></div>
+
+        <h1 class="mb-0">Bin
+          <span class="text-primary">Lee</span>
+        </h1>
+        <div class="subheading mb-5">010-3766-8903 ·
+          <a href="mailto:name@email.com">wbhblb@gmail.com</a>
+        </div>
+      </div>
+    </section>
+	
+	<hr class="m-0">
+	
+	
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">      
+      <div class="w-100">
+        <h2 class="mb-5">About Me</h2>
+        <p class="lead mb-5">안녕하십니까 신입개발자를 희망하는 <strong>이빈</strong>이라고 합니다.<br>
+								32살이라는 나이에 개발이라는 <strong>새로운 분야에 도전</strong>하게 되었고<br>
+								KH 정보교육원에서 6개월간의 자바프레임워크 과정을 수료했습니다.<br>
+								도전에 늦은 나이는 없다고 생각하지만,  열심히 노력해 도전에 그치지 않고 <strong>성공한 개발자</strong>가 되고 싶습니다.<br><br><br>
+								이 포트폴리오는 제가 그 동안 해왔던 팀 프로젝트들과 앞으로도 계속해서 개인프로젝트들을 추가할 예정입니다.<br>
+								부족한 부분이 많겠지만 부디 좋게 봐주시면 감사하겠습니다.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+	 <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons" style="font-weight:600;">
+          <li class="list-inline-item">
+            <i>Java</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Eclipse</i>
+          </li>
+          <li class="list-inline-item">
+            <i>HTML5</i>
+          </li>
+          <li class="list-inline-item">
+            <i>CSS3</i>
+          </li>
+          <li class="list-inline-item">
+            <i>JavaScript</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Oracle DB</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Spring</i>
+          </li>
+          <li class="list-inline-item">
+            <i>MyBatis3</i>
+          </li>
+          <li class="list-inline-item">
+            <i>BootStrap</i>
+          </li>
+          <li class="list-inline-item">
+            <i>JSP</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Apache Tomcat</i>
+          </li>
+          <li class="list-inline-item">
+            <i>AJAX</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Google Maps</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Kakao Maps</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Selenium</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Commons-Fileupload</i>
+          </li>
+          <li class="list-inline-item">
+            <i>CKEditor</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Naver Editor</i>
+          </li>
+          <li class="list-inline-item">
+            <i>Git</i>
+          </li>
+          <li class="list-inline-item">
+            <i>SQL devloper</i>
+          </li>
+
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-html5"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-css3-alt"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-js-square"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-angular"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-react"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-node-js"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-sass"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-less"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-wordpress"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-gulp"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-grunt"></i> -->
+<!--           </li> -->
+<!--           <li class="list-inline-item"> -->
+<!--             <i class="fab fa-npm"></i> -->
+<!--           </li> -->
+        </ul>
+       </div>
+    </section>
+
+    <hr class="m-0">
+	
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="culturesquare">
+      <div class="w-100">
+        <h2 class="mb-5">Project SUMMARY</h2>
+		
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Culture Square(컬쳐스퀘어)</h3>
+            <div class="subheading mb-3">주제: 예술인과 관객들의 소통 공간</div>
+            <br><br>
+		  	</div>
+            <div class="resume-date text-md-right">
+             <span class="text-primary">2019년 12월 - 2019년 1월</span>
+            </div>	 	
+		  </div>
+		  	
+            <h4 class="mb-0">@개발환경</h4> <br>
+            <p>
+	            -운영체제 : Windows10 <br>
+				-개발도구 : Eclipse<br>
+				-서버 : Apache Tomcat 9.0<br>
+				-DBMS : Oracle 11g Express Edition Release 11.2.0<br>
+				-프레임워크 : Spring Framework, MyBatis Framework<br>
+				-스프링 버전 : Spring Tools3(Standalone Edition)3.9.10 RELEASE
+				-개발언어 : JAVA, HTML5, CSS, JavaScript, jQuery<br>
+				-디자인 툴 : Bootstrap
+            </p>
+            <br>
+            <h4 class="mb-0">@구현기능</h4> <br>
+            
+     <div class="container" style="padding-bottom:20px; color:#868e96;">
+		<table class="table table-striped" style="color:#868e96;">
+			 <thead>
+			   <tr>
+			      <th>구분</th>
+			      <th style ="padding-left: 35px;">항목</th>
+			   </tr>
+			 </thead>
+			 <tbody>
+			   <tr>
+			      <td style ="vertical-align: middle;">HTTPS 프로토콜 설정</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+						<li>HTTP 프로토콜에 SSL 추가
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>
+			      <td style ="vertical-align: middle;">회원 서비스</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>로그인 / 로그아웃</li>
+			      		<li>회원가입(DB 암호화)</li>
+			      		<li>소셜 로그인(구글, 카카오, 네이버)</li>
+			      		<li>ID/PW 찾기 (메일인증)</li>
+			      		<li>아이디 저장</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>
+			      <td style ="vertical-align: middle;">게시판(자유/예술/PR)</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>게시글 작성, 수정, 삭제, 보기, 좋아요</li>
+			      		<li>댓글 작성, 수정, 삭제, 보기, 좋아요</li>
+			      		<li>파일 업로드 / 다운로드</li>
+			      		<li>대표 이미지 출력</li>
+			      		<li>위치 정보(지도)</li>
+			      		<li>후원</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			  <tr>
+			      <td style ="vertical-align: middle;">크롤링</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>공연 정보 불러오기</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			  <tr>
+			      <td style ="vertical-align: middle;">알림</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>자신이 쓴 게시글의 댓글/ 좋아요/ 후원/ 팔로우 알림</li>
+			      		<li>자신이 쓴 댓글의 답글 알림</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			  <tr>
+			      <td style ="vertical-align: middle;">날씨</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>현재 서울의 실시간 날씨정보 출력</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>				   
+			      <td style ="vertical-align: middle;">마이페이지</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>내 정보 수정</li>
+			      		<li>비밀번호 / 닉네임 / 프로필 사진 변경</li>
+			      		<li>내가 쓴 글 / 댓글 / 좋아요 글 보기</li>
+			      		<li>후원 내역 보기</li>
+			      		<li>팔로우한 예술인 보기</li>
+			      		<li>예술인 등업 신청</li>
+			      		<li>회원탈퇴</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>
+			      <td style ="vertical-align: middle;">관리자 페이지</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>게시판 보기 / 수정 / 삭제 / 검색</li>
+			      		<li>회원 정보 보기</li>
+			      		<li>예술인 신청 회원 승인</li>
+			      		<li>예술인 회원 강등</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			 </tbody> 
+		</table>				
+    </div><!-- CONTAINER -->
+    
+            <br>
+			<h4 class="mb-0">@참여소감</h4> <br>
+            <p>
+				좋은 팀원들을 만나 서로 구현했던 부분들을 확인해주면서 보완해야 될 점들을 계속해서 회의하며 프로젝트를 진행했습니다.<br>
+				세미 프로젝트때와는 다른 새로운 파트를 맡았고, 스프링 프레임워크를 사용한 첫 프로젝트여서<br>
+				부족했지만 HTTPS, 로그인, 쿠키 저장 및 이메일 인증, 카카오맵 API등 재미있게 알아 갈 수 있는 시간들이었고<br> 
+				제가 맡았던 파트 및 전체적인 프로젝트 결과물 모두 만족스러웠던 프로젝트였습니다.<br>
+            </p>
+            <br>
+            <h4 class="mb-0">@프로젝트 세부 정보</h4> <br>
+            <a href="https://drive.google.com/file/d/1AokS6bitb23r-HBNHQ4UQcO9dTvC9mde/view?usp=sharing" style="font-size: 2rem;" target="_blank">-CultureSquare PPT</a> 
+            <br>
+            <a href="https://github.com/shysuL/CultureSquare" style="font-size: 2rem;" target="_blank">-CultureSquare GitHub</a>
+
+        </div>          
+    </section>
+    
+    <hr class="m-0">
+    
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+    	<div class="w-100">
+        	<h2 class="mb-5">Project ERD</h2>
+		<div>
+       		<img src="img/culturesquare/ERD.png" alt="" style="width:140%;">
+        </div>
+      	</div>
+    
+  	</section>
+  	
+  	<hr class="m-0">
+  	
+  	
+	<section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+	
+	 <div class="w-100">
+        	<h2 class="mb-5">Story Board</h2>
+            <div class="subheading mb-3">Click, Detail View</div>
+	    <div class="container-fluid p-0" id="pic" style=" width:140%;">
+	      <div class="row no-gutters">
+	        <div class="col-lg-4 col-sm-6">
+		        <figure>
+		            <img id= "pic7" name="pic7" style = "height: 342px;" class="img-fluid" src="img/culturesquare/SSL 인증서.png" alt="">
+		            <div class="overlay" id="pic7">
+		            	<div class="description" id="pic7">
+		            		#SSL 인증서
+		            	</div>
+		            </div>
+		        </figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic8" name="pic8" style = "height: 342px;" class="img-fluid" src="img/culturesquare/회원가입.png" alt="">
+		           	<div class="overlay" id="pic8">
+		            	<div class="description" id="pic8">
+		            		#회원가입폼 <br> #중복 검사 <br> #AJAX <br> #유효성 검사 <br>
+		            	</div>
+		            </div>
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic9" style = "height: 342px;" class="img-fluid" src="img/culturesquare/메일인증.png" alt="">
+		            <div class="overlay" id="pic9">
+		            	<div class="description" id="pic9">
+		            		#메일인증
+		            	</div>
+		            </div>
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic10" style = "height: 342px;" class="img-fluid" src="img/culturesquare/비밀번호 암호화.png" alt="">
+		            <div class="overlay" id="pic10">
+		            	<div class="description" id="pic10">
+		            		#비밀번호 암호화 <br> #DB저장 암호화
+		            	</div>
+		            </div>		            
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic11" style = "height: 342px;" class="img-fluid" src="img/culturesquare/로그인.png" alt="">
+		            <div class="overlay" id="pic11">
+		            	<div class="description" id="pic11">
+		            		#로그인폼 <br> #AJAX <br> #쿠키 <br> #아이디 저장 <br> #세션
+		            	</div>
+		            </div>
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic12" style = "height: 342px;" class="img-fluid" src="img/culturesquare/아이디 비밀번호 찾기.png" alt="">
+		            <div class="overlay" id="pic12">
+		            	<div class="description" id="pic12">
+		            		#아이디 찾기 <br> #비밀번호 찾기 <br> #AJAX <br> #임시비밀번호 메일발송
+		            	</div>
+		            </div>
+	
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic13" style = "height: 342px;" class="img-fluid" src="img/culturesquare/공연 위치 정보 추가.png" alt="">
+		            <div class="overlay" id="pic13">
+		            	<div class="description" id="pic13">
+		            		#위치정보 <br> #KAKAO MAPS
+		            	</div>
+		            </div>
+
+	        	</figure>
+	        </div>
+	               
+	      </div>
+	    </div>
+     </div>	
+	</section>
+
+    <hr class="m-0">	
+	
+	
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="pickmi">
+      <div class="w-100">
+        <h2 class="mb-5">Project SUMMARY</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">픽미(PickMi)</h3>
+            <div class="subheading mb-3">주제: 프로젝트 & 팀원 관리 플랫폼</div>
+            <br><br>
+		  	</div>
+            <div class="resume-date text-md-right">
+             <span class="text-primary">2019년 10월 - 2019년 12월</span>
+            </div>	 	
+		 </div>                  
+            <h4 class="mb-0">@개발환경</h4> <br>
+            <p>
+	            -운영체제 : Windows10 <br>
+	            -개발도구 : Eclipse
+	            -DBMS : Oracle 11g Express Edition Release 11.2.0, SQL Developer
+				-서버 : Apache Tomcat 9.0<br>
+				-개발언어 : Java, HTML5, CSS, Javascript, jQuery
+				-디자인 툴 : Bootstrap<br>
+				-형상/버전관리 : Github, Eclipse-git
+            </p>
+            <br>
+            <h4 class="mb-0">@구현기능</h4> <br>
+            
+     <div class="container" style="padding-bottom:20px; color:#868e96;">
+		<table class="table table-striped" style="color:#868e96;">
+			 <thead>
+			   <tr>
+			      <th>구분</th>
+			      <th style ="padding-left: 35px;">항목</th>
+			   </tr>
+			 </thead>
+			 <tbody>
+			   <tr>
+			      <td style ="vertical-align: middle;">회원 서비스</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>로그인 / 로그아웃</li>
+			      		<li>회원가입</li>
+			      		<li>PW 찾기 (메일인증)</li>
+			      		<li>아이디 저장</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>
+			      <td style ="vertical-align: middle;">게시판(프로필, 프로젝트, 자유, 완성된 프로젝트 공유 게시판)</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>게시글 작성, 수정, 삭제, 보기, 좋아요</li>
+			      		<li>댓글 작성, 수정, 삭제, 보기, 좋아요</li>
+			      		<li>파일 업로드 / 다운로드</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			  <tr>
+			      <td style ="vertical-align: middle;">채팅</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>회원 간 실시간 채팅</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>				   
+			      <td style ="vertical-align: middle;">마이페이지</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>내 정보 수정</li>
+			      		<li>비밀번호 / 닉네임 / 프로필 사진 변경</li>
+			      		<li>내가 쓴 글 / 댓글 / 좋아요 글 보기</li>
+			      		<li>회원탈퇴</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			   <tr>
+			      <td style ="vertical-align: middle;">관리자 페이지</td>
+			      <td>
+			    	<ul style="list-style-type:square;">
+			      		<li>게시판 보기 / 수정 / 삭제 / 검색</li>
+			      		<li>회원 정보 보기</li>
+			     	 </ul>
+			      </td>
+			   </tr>
+			 </tbody> 
+		</table>				
+    </div><!-- CONTAINER -->
+    
+            <br>
+			<h4 class="mb-0">@참여소감</h4> <br>
+            <p>
+            	프로젝트를 시작할 당시엔 서블릿에 대한 개념이 완벽히 자리 잡히지 않아 내가 맡게 될 부분을 <br> 
+            	구현할 수 있을까라는 걱정이 많았지만 모르는 부분은 나이가 어린 친구들한테 물어봐가며 끝까지 포기하지 않고 <br>제가 맡은 부분은 구현해낸 제 자신이 뿌듯했습니다.<br>
+            	프로젝트를 구현 하면서는 몰랐지만 끝나고 난 뒤, MVC패턴의 대략적인 흐름을 이해 할 수 있게 되었고 <br>
+            	사용해보고 싶었던 기술인 AJAX를 이용해 파일업로드를 구현해 내어 <br>많은 자신감을 얻을 수 있었던 프로젝트였습니다.
+            </p>
+            <br>
+            <h4 class="mb-0">@프로젝트 세부 정보</h4> <br>
+            <a href="https://drive.google.com/file/d/1AiR4qfFOIUCdt3ytN8NNDmm_ZNUkluju/view?usp=sharing" style="font-size: 2rem;" target="_blank">-PickMi PPT</a> 
+            <br>
+            <a href="https://github.com/Kinuk97/PickMI" style="font-size: 2rem;" target="_blank">-PickMi GitHub</a>
+
+
+        </div>          
+    </section>
+    
+    <hr class="m-0">
+    
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+    	<div class="w-100">
+        	<h2 class="mb-5">Project ERD</h2>
+		<div>
+       		<img src="img/PickMI/ERD.png" alt="">
+        </div>
+      	</div>
+    
+  	</section>
+  	
+  	<hr class="m-0">
+  	
+  	
+	<section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+	
+	 <div class="w-100">
+        	<h2 class="mb-5">Story Board</h2>
+        	<div class="subheading mb-3">Click, Detail View</div>
+	    <div class="container-fluid p-0" id="pic" style="width:140%;">
+	      <div class="row no-gutters">
+	        <div class="col-lg-4 col-sm-6">
+		        <figure>
+		            <img id= "pic1" name="pic1" style = "height: 342px;" class="img-fluid" src="img/PickMI/마이페이지.png" alt="">
+		            <div class="overlay" id="pic1">
+		            	<div class="description" id="pic1">
+		            		#마이페이지 <br> #회원정보불러오기
+		            	</div>
+		            </div>
+		        </figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic2" style = "height: 342px;" class="img-fluid" src="img/PickMI/내가 찜한 게시물.png" alt="">
+		           	<div class="overlay" id="pic2">
+		            	<div class="description" id="pic2">
+		            		#마이페이지 <br> #찜한 게시물
+		            	</div>
+		            </div>
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic3" style = "height: 342px;" class="img-fluid" src="img/PickMI/비밀번호 수정.png" alt="">
+		            <div class="overlay" id="pic3">
+		            	<div class="description" id="pic3">
+		            		#마이페이지 <br> #비밀번호 수정
+		            	</div>
+		            </div>
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic4" style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자 페이지 게시판 게시글 삭제.png" alt="">
+		            <div class="overlay" id="pic4">
+		            	<div class="description" id="pic4">
+		            		#마이페이지 <br> #비밀번호 수정
+		            	</div>
+		            </div>		            
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic5" style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자페이지 게시글 댓글 삭제.png" alt="">
+		            <div class="overlay" id="pic5">
+		            	<div class="description" id="pic5">
+		            		#관리자페이지 <br> #댓글 삭제
+		            	</div>
+		            </div>
+	        	</figure>
+	        </div>
+	        
+	        <div class="col-lg-4 col-sm-6">
+	        	<figure>
+		            <img id="pic6" style = "height: 342px;" class="img-fluid" src="img/PickMI/관리자페이지 계정 삭제.png" alt="">
+		            <div class="overlay" id="pic6">
+		            	<div class="description" id="pic6">
+		            		#관리자페이지 <br> #계정 삭제
+		            	</div>
+		            </div>
+	
+	        	</figure>
+	        </div>
+	               
+	      </div>
+	    </div>
+     </div>	
+	</section>
+	
+  </div>
+  <!--   container-fluid p-0 -END-	 -->
+
+  
+  	<!-- 스토리보드 모달창 -->
+	<div class="modal fade" id="storyModal"	>
+	  <div class="modal-dialog modal-dialog-centered modal-xl">
+	    <div class="modal-content">
+	
+	      <!-- Modal Header -->
+	      <div class="modal-header">
+	        <h4 class="modal-title">Detail View</h4>
+	        <button id="inputClose" type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	
+	      <!-- Modal body -->
+	      <div class="modal-body">
+	    	<div class='text-div'></div>
+	        <br>
+	        <img class='modal-img' style='width:100%;'>
+	        <hr>
+	        
+	      </div>
+	      <div style="padding:1rem;">
+	    	<div class='text-div-code'></div>
+	    	<br>
+	        <img class='modal-code' style="padding:1rem;">
+	      </div>
+		
+	    </div>
+	  </div>
+	</div>
+	
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
